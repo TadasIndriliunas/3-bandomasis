@@ -17,11 +17,19 @@ class CarGridComponent {
 
   fetchCar = () => API.fetchCar(this.saveCar, this.showError);
 
+  wrapChild = element => {
+    const wrapper = document.createElement('div');
+    wrapper.className = 'col-12 col-sm-6 col-lg-4 col-xl-3 align-self-stretch';
+    wrapper.append(element);
+    return wrapper;
+  }
+
   init = () => {
     this.state.loading = true;
     setTimeout(this.fetchCar, 2000);
     this.fetchCar();
     this.htmlElement = document.createElement('div');
+    this.htmlElement.className = 'row g-3';
 
     this.render();
   }
@@ -38,6 +46,7 @@ class CarGridComponent {
           onDelete: () => this.deleteCar(id)
         }))
         .map(x => x.htmlElement)
+        .map(this.wrapChild);
       this.htmlElement.append(...children);
     } else {
       this.htmlElement.innerHTML = 'Nėra elementų';
