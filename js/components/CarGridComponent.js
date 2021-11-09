@@ -28,11 +28,11 @@ class CarGridComponent {
   render = () => {
     const { loading, Car } = this.state;
     if (loading) {
-      this.htmlElement.innerHTML = 'loading...';
+      this.htmlElement.innerHTML = 'Siunčiama...';
     } else if (Car.length > 0) {
-      this.htmlElement.innerHTML = 'Data fetched, this is awsome view. Buy flomasters.';
+      this.htmlElement.innerHTML = 'Parsiųsta!';
     } else {
-      this.htmlElement.innerHTML = 'Sorry, no items at this moment';
+      this.htmlElement.innerHTML = 'Nėra elementų';
     }
   }
 }
