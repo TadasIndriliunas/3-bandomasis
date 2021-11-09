@@ -19,6 +19,7 @@ class CarGridComponent {
 
   init = () => {
     this.state.loading = true;
+    setTimeout(this.fetchCar, 2000);
     this.fetchCar();
     this.htmlElement = document.createElement('div');
 
@@ -28,9 +29,16 @@ class CarGridComponent {
   render = () => {
     const { loading, Car } = this.state;
     if (loading) {
-      this.htmlElement.innerHTML = 'Siunčiama...';
+      this.htmlElement.innerHTML = '<div class="text-center"><img src="assets/loading.gif" /></div>';
     } else if (Car.length > 0) {
-      this.htmlElement.innerHTML = 'Parsiųsta!';
+      this.htmlElement.innerHTML = '';
+      const children = Car
+        .map(({ id, ...carProps }) => new CarCardComponent({
+          ...carProps,
+          onDelete: () => this.deleteCar(id)
+        }))
+        .map(x => x.htmlElement)
+      this.htmlElement.append(...children);
     } else {
       this.htmlElement.innerHTML = 'Nėra elementų';
     }
