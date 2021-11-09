@@ -1,0 +1,76 @@
+{
+  "Car": [
+    {
+      "id": "0",
+      "brand": "Audi",
+      "model": "A6",
+      "year": 2012,
+      "fuelTypes": "petrol",
+      "price": {
+        "amount": 12000,
+        "currency": "€"
+      },
+      "imgSrc": "https://autoplius-img.dgn.lt/ann_25_192839313/audi-a6-2-0-l-universalas-2012-benzinas-0.jpg"
+    },
+    {
+      "id": "1",
+      "brand": "Mercedes Benz",
+      "model": "E270",
+      "year": 2015,
+      "fuelTypes": "diesel",
+      "price": {
+        "amount": 15000,
+        "currency": "€"
+      },
+      "imgSrc": "https://autoplius-img.dgn.lt/ann_3_194447237/mercedes-benz-e200-2-2-l-universalas-2015-dyzelinas-0.jpg"
+    },
+    {
+      "id": "2",
+      "brand": "BMW",
+      "model": "530",
+      "year": 2008,
+      "fuelTypes": "diesel",
+      "price": {
+        "amount": 6000,
+        "currency": "€"
+      },
+      "imgSrc": "https://autoplius-img.dgn.lt/ann_3_192422555/bmw-530-3-0-l-universalas-2008-dyzelinas-0.jpg"
+    },
+    {
+      "id": "3",
+      "brand": "Toyota",
+      "model": "Prius",
+      "year": 2015,
+      "fuelTypes": "hybrid",
+      "price": {
+        "amount": 9900,
+        "currency": "€"
+      },
+      "imgSrc": "https://autoplius-img.dgn.lt/ann_3_188426169/toyota-prius-1-8-l-hecbekas-2015-benzinas-elektra-0.jpg"
+    },
+    {
+      "id": "4",
+      "brand": "Volkswagen",
+      "model": "Passat",
+      "year": 2019,
+      "fuelTypes": "petrol",
+      "price": {
+        "amount": 9900,
+        "currency": "€"
+      },
+      "imgSrc": "https://autoplius-img.dgn.lt/ann_3_189326915/volkswagen-passat-1-5-l-sedanas-2019-benzinas-0.jpg"
+    },
+    {
+      "id": "5",
+      "brand": "Volvo",
+      "model": "S80",
+      "year": 2014,
+      "fuelTypes": "diesel",
+      "price": {
+        "amount": 10200,
+        "currency": "€"
+      },
+      "imgSrc": "https://autoplius-img.dgn.lt/ann_3_169923351/volvo-s80-2-4-l-sedanas-2014-dyzelinas-0.jpg"
+    }
+  ]
+}
